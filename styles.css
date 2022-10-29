@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #fc7474;
+  --secondary-color: #f2c1c1;
+  --text-color-dark: #586073;
+  --text-color-light: #969daf;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
