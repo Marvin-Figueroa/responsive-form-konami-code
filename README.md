@@ -20,6 +20,8 @@ The homework consists of two phases, the first one is about creating a responsiv
 
 ## Live Site
 
+[Vercel Deployment](https://homework-week-1.vercel.app/)
+
 ## Built With
 
 - Semantic HTML5 markup
