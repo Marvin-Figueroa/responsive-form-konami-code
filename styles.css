@@ -320,3 +320,21 @@ input[type="checkbox"]:focus {
 .input-error input {
   border: 1px solid crimson;
 }
+
+/* Konami container */
+.konami {
+  position: relative;
+}
+
+.konami::after {
+  content: "";
+  display: block;
+  background: url(./images/explosion.gif);
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 20rem;
+}
