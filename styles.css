@@ -279,7 +279,6 @@ input[type="checkbox"]:focus {
 
 .input-error {
   position: relative;
-  /* border: 1px solid crimson; */
 }
 
 ::after {

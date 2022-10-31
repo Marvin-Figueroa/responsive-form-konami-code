@@ -1,8 +1,8 @@
 const form = document.querySelector(".signup__form");
 const formInputs = document.querySelectorAll(".form__input");
-const submitBtn = document.querySelector(".form__input--submit");
 
-const simpleWebsiteRegEx = /^(https:|http:|www\.)\S*/gm;
+const simpleWebsiteRegEx =
+  /^[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#&//=]*)$/gi;
 const simplePhoneRegEx = /^[\d]{4}-[\d]{4}$/;
 let formIsValid;
 
@@ -10,8 +10,10 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   formIsValid = true;
 
+  formInputs.forEach((input) => removeErrorClasses(input.parentElement));
+
   formInputs.forEach((input) => {
-    removeErrorClasses(input.parentElement);
+    console.log(input);
 
     if (input.value.trim().length === 0) {
       input.parentElement.classList.add("input-error", "error-empty");

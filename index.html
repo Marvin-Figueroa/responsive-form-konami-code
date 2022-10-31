@@ -26,23 +26,25 @@
         <h2 class="form__heading">Let's get your account setup!</h2>
         <div class="form__input-group">
           <div class="form__input-container">
-            <label class="form__input--label" for="name">Name</label>
+            <label class="form__input--label" for="firstname">First Name</label>
             <input
               class="form__input"
               type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your name"
+              name="firstname"
+              id="firstname"
+              maxlength="50"
+              placeholder="Enter your first name"
             />
           </div>
           <div class="form__input-container">
-            <label class="form__input--label" for="lastname">Lastname</label>
+            <label class="form__input--label" for="lastname">Last Name</label>
             <input
               class="form__input"
               type="text"
               name="lastname"
               id="lastname"
-              placeholder="Enter your lastname"
+              maxlength="50"
+              placeholder="Enter your last name"
             />
           </div>
         </div>
@@ -55,6 +57,7 @@
               type="password"
               name="password"
               id="password"
+              maxlength="50"
               placeholder="Enter your password"
             />
           </div>
@@ -67,6 +70,7 @@
               type="password"
               name="passwordConfirm"
               id="passwordConfirm"
+              maxlength="50"
               placeholder="Confirm your password"
             />
           </div>
@@ -79,6 +83,7 @@
               type="tel"
               name="phone"
               id="phone"
+              maxlength="9"
               placeholder="Enter your phone number"
             />
           </div>
@@ -89,11 +94,11 @@
               type="url"
               name="website"
               id="website"
+              maxlength="100"
               placeholder="Enter your website url"
             />
           </div>
         </div>
-
         <div class="form__input-group form__input-group--last">
           <div class="form__input-container--range">
             <label class="form__input--label" for="experience"

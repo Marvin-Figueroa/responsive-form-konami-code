@@ -3,7 +3,7 @@ const konamiCode = "magic";
 const main = document.querySelector(".signup");
 
 window.addEventListener("keydown", (e) => {
-  pressedKeys.push(e.key.toLowerCase());
+  pressedKeys.push(e.key?.toLowerCase());
 
   if (pressedKeys.length > konamiCode.length) {
     pressedKeys.shift();
