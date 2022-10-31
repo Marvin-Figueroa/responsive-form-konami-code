@@ -16,112 +16,125 @@
   <body>
     <main class="signup container">
       <section class="signup-image">
-        <img src="./images/signup.svg" alt="A signup illustration" />
-        <img src="./images/blob.svg" alt="" />
+        <img
+          class="signup-image__illustration"
+          src="./images/signup.svg"
+          alt="A signup illustration"
+        />
       </section>
       <form class="signup__form" action="#">
         <h2 class="form__heading">Let's get your account setup!</h2>
-        <p class="form__legend">Enter your personal details</p>
-        <div class="form__input-container">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-          />
+        <div class="form__input-group">
+          <div class="form__input-container">
+            <label class="form__input--label" for="name">Name</label>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form__input-container">
+            <label class="form__input--label" for="lastname">Lastname</label>
+            <input
+              class="form__input"
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Enter your lastname"
+            />
+          </div>
         </div>
-        <div class="form__input-container">
-          <label for="lastname">Lastname</label>
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="Enter your lastname"
-          />
+
+        <div class="form__input-group">
+          <div class="form__input-container">
+            <label class="form__input--label" for="password">Password</label>
+            <input
+              class="form__input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="form__input-container">
+            <label class="form__input--label" for="passwordConfirm"
+              >Password Confirmation</label
+            >
+            <input
+              class="form__input"
+              type="password"
+              name="passwordConfirm"
+              id="passwordConfirm"
+              placeholder="Confirm your password"
+            />
+          </div>
         </div>
-        <div class="form__input-container">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-          />
+        <div class="form__input-group">
+          <div class="form__input-container">
+            <label class="form__input--label" for="phone">Phone Number</label>
+            <input
+              class="form__input"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div class="form__input-container">
+            <label class="form__input--label" for="website">Website</label>
+            <input
+              class="form__input"
+              type="url"
+              name="website"
+              id="website"
+              placeholder="Enter your website url"
+            />
+          </div>
         </div>
-        <div class="form__input-container">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Enter your password"
-          />
+
+        <div class="form__input-group">
+          <div class="form__input-container--range">
+            <label class="form__input--label" for="experience"
+              >Level Of Experience</label
+            >
+            <input
+              class="form__input--range"
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              id="experience"
+              step="1"
+            />
+          </div>
+          <div class="form__input-container--age">
+            <label class="form__input--label" for="age">Age</label>
+            <input
+              class="form__input"
+              type="number"
+              name="age"
+              id="age"
+              min="18"
+              max="150"
+            />
+          </div>
         </div>
-        <div class="form__input-container">
-          <label for="passwordConfirm">Password Confirmation</label>
-          <input
-            type="password"
-            name="passwordConfirm"
-            id="passwordConfirm"
-            placeholder="Confirm your password"
-          />
-        </div>
-        <div class="form__input-container">
-          <label for="phone">Phone Number</label>
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="Enter your phone number"
-          />
-        </div>
-        <div class="form__input-container">
-          <label for="age">Age</label>
-          <input
-            type="number"
-            name="age"
-            id="age"
-            min="18"
-            max="150"
-            placeholder="Enter your age"
-          />
-        </div>
-        <div class="form__input-container">
-          <label for="website">Website</label>
-          <input
-            type="url"
-            name="website"
-            id="website"
-            placeholder="Enter your website url"
-          />
-        </div>
-        <div class="form__input-container">
-          <label for="experience">Level Of Experience</label>
-          <input
-            type="range"
-            min="1"
-            max="3"
-            value="2"
-            id="experience"
-            step="1"
-            list="tickmarks"
-          />
-        </div>
-        <div class="form__input-container">
-          <p class="form__input-label">Gender</p>
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="male" />
-          <label for="female">Female</label>
-          <input type="radio" name="gender" id="female" />
-        </div>
-        <div class="form__input-container">
+        <div class="form__input-container--checkbox">
           <input type="checkbox" name="agreeTerms" id="agreeTerms" />
-          <label for="agreeTerms"
-            >I agree to the company <a href="#">Terms, privacy policy</a></label
+          <label class="form__label-terms" for="agreeTerms"
+            >I agree to the company
+            <a class="form__link-terms" href="#"
+              >Terms, privacy policy</a
+            ></label
           >
         </div>
-        <input type="submit" value="Submit" />
+        <input
+          class="form__input--submit"
+          type="submit"
+          value="Create Account"
+        />
       </form>
     </main>
   </body>
