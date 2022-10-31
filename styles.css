@@ -225,3 +225,62 @@ input[type="checkbox"]:focus {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
+
+/* Media Queries - Styles for non-desktop devices */
+
+@media screen and (max-width: 870px) {
+  body {
+    height: initial;
+  }
+
+  .signup {
+    margin: 3rem 0;
+  }
+
+  .signup__form {
+    padding: 12rem 4rem;
+    background: url(./images/wave-top.svg), url(./images/wave-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+  }
+
+  .signup-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .signup {
+    margin: 3rem 0;
+  }
+
+  .signup__form {
+    gap: 0;
+  }
+
+  .form__input-group {
+    flex-direction: column;
+  }
+
+  .form__input-group--last {
+    flex-direction: row;
+  }
+
+  .form__input-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .form__input-container--checkbox {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .signup {
+    width: 90%;
+  }
+
+  .signup__form {
+    padding: 12rem 2rem;
+  }
+}
