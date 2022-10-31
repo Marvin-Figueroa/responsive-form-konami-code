@@ -167,16 +167,6 @@ body {
   font-size: 1.4rem;
 }
 
-.form__link-terms:link,
-.form__link-terms:visited {
-  color: var(--text-color-dark);
-}
-
-.form__link-terms:focus {
-  outline: 2px solid var(--primary-color);
-  border-radius: 5px;
-}
-
 /* Creating custom checkbox */
 /** 1-Hiding the native checkbox  */
 
@@ -283,4 +273,50 @@ input[type="checkbox"]:focus {
   .signup__form {
     padding: 12rem 2rem;
   }
+}
+
+/* Handling error messages */
+
+.input-error {
+  position: relative;
+  /* border: 1px solid crimson; */
+}
+
+::after {
+  display: block;
+  position: absolute;
+  color: crimson;
+  font-size: 1.2rem;
+  font-family: Lato, sans-serif;
+  bottom: -18px;
+  left: 0;
+  font-style: italic;
+}
+
+.error-empty::after {
+  content: "This field is required";
+}
+
+.error-format-website::after {
+  content: "The format is wrong, E.g. www.website.com";
+}
+
+.error-format-text::after {
+  content: "This field only accepts letters";
+}
+
+.error-password-mismatch::after {
+  content: "Passwords must match";
+}
+
+.error-format-phone::after {
+  content: "The format is wrong, E.g. 7777-7777";
+}
+
+.error-format-number::after {
+  content: "Only numbers";
+}
+
+.input-error input {
+  border: 1px solid crimson;
 }

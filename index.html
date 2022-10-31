@@ -22,7 +22,7 @@
           alt="A signup illustration"
         />
       </section>
-      <form class="signup__form" action="#">
+      <form class="signup__form" method="post" action="#" novalidate>
         <h2 class="form__heading">Let's get your account setup!</h2>
         <div class="form__input-group">
           <div class="form__input-container">
@@ -105,6 +105,7 @@
               min="0"
               max="100"
               value="0"
+              name="experience"
               id="experience"
               step="1"
             />
@@ -122,12 +123,9 @@
           </div>
         </div>
         <div class="form__input-container--checkbox">
-          <input type="checkbox" name="agreeTerms" id="agreeTerms" />
-          <label class="form__label-terms" for="agreeTerms"
-            >I agree to the company
-            <a class="form__link-terms" href="#"
-              >Terms, privacy policy</a
-            ></label
+          <input type="checkbox" name="newsletter" id="newsletter" />
+          <label class="form__label-terms" for="newsletter"
+            >Subscribe me to the newsletter</label
           >
         </div>
         <input
@@ -137,5 +135,6 @@
         />
       </form>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
