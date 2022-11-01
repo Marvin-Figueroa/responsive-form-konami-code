@@ -13,8 +13,6 @@ form.addEventListener("submit", (e) => {
   formInputs.forEach((input) => removeErrorClasses(input.parentElement));
 
   formInputs.forEach((input) => {
-    console.log(input);
-
     if (input.value.trim().length === 0) {
       input.parentElement.classList.add("input-error", "error-empty");
       formIsValid = false;
